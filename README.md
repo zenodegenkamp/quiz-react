@@ -52,9 +52,12 @@ npm start
 
 The application consists of the following main component:
 
-### Main Component
+### Start Component
+The Start component is the entry point of the application. It displays a start screen with a title, introductory text, and a "Start" button.
 
-- The `Main` component is the main entry point of the application.
+When the user clicks the "Start" button, it triggers the handleClick function from the parent component.
+
+### Main Component
 
 - It uses React hooks to manage the application state, including the list of questions, the current status of the quiz (`notChecked`, `checked`, or `final`), and whether the user wants to restart the game.
 
