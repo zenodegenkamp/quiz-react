@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Orbitron', sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    width: 95%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 6em;
+}
+
+button {
+    opacity: 0.4;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+
+.spline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+
+/* Start screen */
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.start-screen h1 {
+    margin-bottom: 0;
+}
+
+.start-screen p {
+    width: 500px;
+}
+
+
+
+/* QUIZ SECTION */
+.radio {
+    display: none;
+
+}
+
+.radio-label {
+    display: inline-block;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    opacity: 0.9;
+    color: whitesmoke;
+    font-weight: bolder;
+    margin-right: 1em;
+}
+
+.radio:checked+.radio-label {
+    background-color: #2100fb;
+    color: #fff;
+    border-color: #2100fb;
+}
+
+.radio:checked+.radio-label.correct {
+    border: 2px solid #2100fb;
+    background-color: #2100fb;
+    color: #fff;
+    opacity: 1;
+}
+
+.radio:checked+.radio-label.incorrect {
+    border: 2px solid rgb(194, 3, 3);
+    background-color: rgb(194, 3, 3);
+    color: #fff;
+
+}
+
+.radio+.radio-label.correctNotChosen {
+    border: 2px solid #2100fb;
+    color: #fff;
+
+
+}
+
+.quiz-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.check-btn,
+.start-btn {
+    display: block;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    opacity: 0.6;
+    margin: 1.5em auto;
+}
+
+
+/*  FINAL SCREEN */
+.scoreboardGreen,
+.scoreboardRed {
+    font-size: 2rem;
+    padding: 1em;
+    border-radius: 100px;
+}
+
+.scoreboardGreen {
+    box-shadow: 0 0 20px 5px rgb(2, 244, 2);
+}
+
+.scoreboardRed {
+    box-shadow: 0 0 20px 5px rgb(244, 2, 2);
+}
